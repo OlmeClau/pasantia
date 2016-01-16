@@ -1,6 +1,14 @@
 Rails.application.routes.draw do
+  resources :actividads
    root 'home#index'
    get '/gastronomia' => 'home#gastronomia'
+   get '/about_us' => 'home#about_us'
+   get '/contact_us' => 'home#contact_us'
+   get '/directorio' => 'home#directorio'
+   get '/ferias' => 'home#ferias'
+   get '/turismo' => 'home#turismo'
+   get '/videos' => 'home#videos'
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
